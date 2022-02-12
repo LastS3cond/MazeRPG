@@ -1,16 +1,3 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-public class DungeonGenerator
-{
-   public static void main(String[]args) throws FileNotFoundException
-   {
-      Scanner in=new Scanner(System.in);
-      Warrior player=new Warrior();
-      System.out.println(player);
-      Dungeon d= new Dungeon(player);
-   }
-}
 class Dungeon
 {
    private Warrior mc;
@@ -568,27 +555,4 @@ class Warrior
    {
       return "Name: "+name+"\tClique: "+clique+"\tRace: "+race+"   Gender: "+sex+"\nStats:\nStrength: "+str+"\nDefense: "+def+"\nSpeed: "+spd+"\nAgility: "+agl+"\nIntelligence: "+iq+"\nMagic: "+mag+"\nLuck: "+lck+"\nHealth: "+hp;
    }
-  // public void fight(Warrior other) //Allowes Warriors to fight eachother, winnner is based off their stats
-//   {
-  //    if(this.iq-20>other.iq)
-    //  {
-      //   System.out.println(this.name+" wins by IQ");
-//      }
-  //    else if(other.iq-20>this.iq)
-    //  {
-      //   System.out.println(other.name+" wins by IQ");
-      //}
-   //   else if(this.strength>other.strength)
-    //  {
-      //   System.out.println(this.name+" wins by Strength");
-     // }
-      //else if(this.strength<other.strength)
-    //  {
-        // System.out.println(other.name+" wins by Strength");
-      //}
-     // else
-      //{
-      //System.out.println("No winner");
-   //   }
-  // }
 }
